@@ -80,4 +80,8 @@ const para = document.querySelectorAll('p');
         })
     });
 
-    
+    document.addEventListener('contextmenu', (e) => {
+        para.forEach((par) => {
+            e.preventDefault();
+        })
+    })
