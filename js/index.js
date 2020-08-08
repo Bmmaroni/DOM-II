@@ -71,3 +71,13 @@ const navs = document.querySelectorAll('a');
     navs[3].addEventListener('click', (e) => {
         e.preventDefault();
     });
+
+const para = document.querySelectorAll('p');
+
+    document.addEventListener('auxclick', (e) => {
+        para.forEach((par) => {
+            par.style.color = "white";
+        })
+    });
+
+    
